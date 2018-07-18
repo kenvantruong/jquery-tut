@@ -1,6 +1,8 @@
+$('.btn').click(function(){
+  console.log('Hello');
+});
 
-
-
+$('.inputX').val();
 
 
 
