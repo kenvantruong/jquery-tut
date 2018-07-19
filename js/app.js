@@ -2,9 +2,20 @@ $('.btn').click(function(){
   console.log('Hello');
 });
 
-$('.inputX').val();
+$('.inputX').keydown(function(){
+  console.log('pressed');
+});
 
 
+//jQuery is like css
+$('.btn').css(
+  {
+    background: '#1ce'
+  },
+  {
+    padding: '25px'
+  }
+)
 
 
 
