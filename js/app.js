@@ -1,125 +1,41 @@
-$('.btn').click(function(){
-  console.log('Hello');
+// jQuery - Beginners Best Friend
+
+// ------- .ready() --------
+$(function() {
+  // *******
+  // *******
 });
 
-$('.inputX').keydown(function(){
-  console.log('pressed');
-});
 
 
-//jQuery is like css
-$('.btn').css(
-  {
-    background: '#1ce'
-  },
-  {
-    padding: '25px'
-  }
-)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function highestNumber(array) {
-//     highestNum = 0;
-//     secondHighest = 0;
-//     for (var i=0; i < array.length; i++) {
-//         if (highestNum > array[i]) {
-//             highestNum = array[i]
-//         }
-//     }
-    
-// }
-
-// console.log(highestNumber([55,500,700,999])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var sonLuChallenege = [1,56,88,95,23];
-// var highestNumber = 0;
-
-// for (var i=0; i < sonLuChallenege.length;i++) {
-//     if (sonLuChallenege[i] > highestNumber) {
-//         highestNumber = sonLuChallenege[i];
-//     }
-// }
-// console.log(highestNumber);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function largestOfFour(arr) {
-//     var largestNumbers = [];
-//     var currentLargest;
-//     for (var x=0; x < arr.length; x++) {
-//         currentLargest = 0;
-//         for (var y=0; y < arr[x].length; y++) {
-//             if (arr[x][y] > currentLargest) {
-//                 currentLargest = arr[x][y];
-//             }
-//         }
-//         largestNumbers.push(currentLargest);
-//     }
-//     return largestNumbers;
-// }
-  
-// console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ----------------------------
+// ------- .ready() -----------
+// ----------------------------
+
+// .error()
+
+//  --------.resize()---------
+$(function() {
+  $(window).resize(function(){
+    if($(window).width() > 1000) {
+      $('body').css({
+        background: 'red'
+      })
+    } else if ($(window).width() > 700 && ($(window).width() < 999)) {
+      $('body').css({
+        background: '#1ce'
+      })
+    } else if ($(window).width() > 500 && ($(window).width() < 699)) {
+      $('body').css({
+        background: 'green'
+      })
+    } else if ($(window).width() < 430) {
+      $('body').css({
+        background: 'brown'
+      })
+    }
+  })
+})
+
+
+// .scroll()
