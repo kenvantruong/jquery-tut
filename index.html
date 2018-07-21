@@ -9,6 +9,9 @@
   <body>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
     .inside {
       background: #1ce;
       font-size: 13px;
@@ -16,25 +19,45 @@
     }
 
     .box {
-      display: inline-block; 
-      float: left;
-      margin: 1px; 
-      position: relative; 
+      flex: 1;
+      vertical-align: top;
+      margin: 3px 4px 3px 4px;
       border: solid 1px #000; 
-      width: 75px; 
       height: 75px;
+    }
+
+    .btn {
+      padding: 5px 5px;
+      margin: 10px;
+      text-transform: uppercase;
+      background: #1ce;
+      text-align: center;
+      border: 1px solid black;
+      cursor: pointer;
     }
   </style>
     
 
-<div class="box1 box">
-  <p>Welcome</p>
-  <a href="index2.html" class="index">Index</a>
-</div>
+  <div style="display: flex;">
 
-<div class="box2 box">Two</span></div>
+    <div class="box1 box">
+      <p>Welcome</p>
+      <a href="index2.html" class="index">Index</a>
+    </div>
+        
+    <div class="box2 box">
+      <div class="btn">Button</div>
+    </div>
+        
+    <div class="box3 box">Three</div>
+        
+    <div class="box4 box">Four</div>
+        
+    <div class="box5 box">Four</div>
+        
+    <div class="box6 box">Four</div>
+  </div>
 
-<div class="box3 box">Three</span></div>
 
 
 

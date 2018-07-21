@@ -79,8 +79,8 @@ $(document).on("mousemove", function(event) {
 */
 
 /*
-  event.preventDefault()
-*/
+  --- event.preventDefault() --------
+
 
 $(function(){
   $('.box1 .index').on('click', function(e){
@@ -89,4 +89,20 @@ $(function(){
       background: '#1ce'
     })
   })
+})
+*/
+
+
+/*
+  ----- event.stopPropagation() ------
+  Setting this will prevent div on the outter laying gets active
+*/
+$(function(){
+  $('.btn').on('click', function(e){
+    e.stopPropagation()
+    $('.box2').css({
+      background: 'purple'
+    })
+  })
+
 })
