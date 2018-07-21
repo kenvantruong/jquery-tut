@@ -1,41 +1,61 @@
 // jQuery - Beginners Best Friend
 
 // ------- .ready() --------
-$(function() {
-  // *******
-  // *******
-});
+// $(function() {
+  
+// });
 
 
 
-// ----------------------------
-// ------- .ready() -----------
-// ----------------------------
-
-// .error()
+// ---------------------------------------
+// ------- .Browser Events -----------
+// ---------------------------------------
 
 //  --------.resize()---------
-$(function() {
-  $(window).resize(function(){
-    if($(window).width() > 1000) {
-      $('body').css({
-        background: 'red'
-      })
-    } else if ($(window).width() > 700 && ($(window).width() < 999)) {
-      $('body').css({
-        background: '#1ce'
-      })
-    } else if ($(window).width() > 500 && ($(window).width() < 699)) {
-      $('body').css({
-        background: 'green'
-      })
-    } else if ($(window).width() < 430) {
-      $('body').css({
-        background: 'brown'
-      })
-    }
+// $(function(){
+//   $(window).resize(function(){
+//     if($(window).width() > 700 &&  $(window).width() < 850) {
+//       $('body').css({
+//         background: '#1ce'
+//       })
+//     } else if ($(window).width() < 699 ||  $(window).width() > 851) {
+//       $('body').css({
+//         background: '#fff'
+//       })
+//     }
+//   })
+// })
+
+
+
+
+
+
+// ---------------------------------------
+// ------- Event Handlers -----------
+// ---------------------------------------
+
+$(function(){
+  $('.box1').on('click', function(){
+    $('.box1').css({
+      background: '#1ce'
+    })
+  })
+
+  $('.box2').on('click', function(){
+    $('.box2').css({
+      background: 'red'
+    })
+  })
+
+  $('.box3').on('click', function(){
+    $('.box3').css({
+      background: 'green'
+    })
   })
 })
 
 
-// .scroll()
+// ---------------------------------------
+// -------                 -----------
+// ---------------------------------------
