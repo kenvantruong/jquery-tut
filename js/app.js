@@ -71,9 +71,22 @@ $(function(){
 */
 /*
   event.pageX
+
+
+$(document).on("mousemove", function(event) {
+  $(".box4").text("X: " + event.pageX + ", Y: " + event.pageY);
+});
 */
 
-$( document ).on( "mousemove", function( event ) {
-  $( ".box4" ).text( "X: " + event.pageX + ", Y: " + event.pageY );
-});
+/*
+  event.preventDefault()
+*/
 
+$(function(){
+  $('.box1 .index').on('click', function(e){
+    e.preventDefault()
+    $('.box1').css({
+      background: '#1ce'
+    })
+  })
+})
