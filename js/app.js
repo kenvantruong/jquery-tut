@@ -1,10 +1,11 @@
 // jQuery - Beginners Best Friend
 
 // ------- .ready() --------
-// $(function() {
+/*
+$(function() {
   
-// });
-
+});
+*/
 
 
 // ---------------------------------------
@@ -12,35 +13,42 @@
 // ---------------------------------------
 
 //  --------.resize()---------
-// $(function(){
-//   $(window).resize(function(){
-//     if($(window).width() > 700 &&  $(window).width() < 850) {
-//       $('body').css({
-//         background: '#1ce'
-//       })
-//     } else if ($(window).width() < 699 ||  $(window).width() > 851) {
-//       $('body').css({
-//         background: '#fff'
-//       })
-//     }
-//   })
-// })
+/*
+$(function(){
+  $(window).resize(function(){
+    if($(window).width() > 700 &&  $(window).width() < 850) {
+      $('body').css({
+        background: '#1ce'
+      })
+    } else if ($(window).width() < 699 ||  $(window).width() > 851) {
+      $('body').css({
+        background: '#fff'
+      })
+    }
+  })
+})
+*/
 
 
 
 
+/*
+---------------------------------------
+------ Event Handlers -----------
+---------------------------------------
+*/
 
-
-// ---------------------------------------
-// ------- Event Handlers -----------
-// ---------------------------------------
+/* ' .on  ' */
 
 $(function(){
-  $('.box1').on('click', function(){
-    $('.box1').css({
-      background: '#1ce'
-    })
-  })
+  $( ".box1" ).on({
+    dblclick: function() {
+      $( this ).addClass( "inside" );
+    }, click: function() {
+      $( this ).removeClass( "inside" );
+
+    }
+  });
 
   $('.box2').on('click', function(){
     $('.box2').css({
