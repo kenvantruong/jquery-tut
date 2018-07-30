@@ -96,13 +96,39 @@ $(function(){
 /*
   ----- event.stopPropagation() ------
   Setting this will prevent div on the outter laying gets active
-*/
-$(function(){
-  $('.btn').on('click', function(e){
-    e.stopPropagation()
-    $('.box2').css({
-      background: 'purple'
-    })
-  })
 
+  Also If and else. Clicking from button and div - chaning colors
+
+$(function(){
+  $('.box2').on('click', function(e){
+    if((e.target).className == 'btn') {
+      console.log('btn clicked');
+      $('.box2').css({
+      background: 'purple'
+      })
+    } else if ((e.target).className !== 'btn') {
+      console.log('btn not clicked');
+      $('.box2').css({
+        background: '#fff'
+        })
+    }
+  })
+})
+*/
+
+
+/*
+---------------------------------------
+------     Form Events   --------------
+---------------------------------------
+*/
+
+$(function(){
+  $('.select-option').change(function(){
+    alert('Changed Value')
+  })
+})
+
+$('.myname').change(function(e){
+  $('.box1').html(e.target.value)
 })
